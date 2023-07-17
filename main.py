@@ -1,4 +1,4 @@
-from website.templates import create_app
+from websiteimport create_app
 
 app = create_app()
 
