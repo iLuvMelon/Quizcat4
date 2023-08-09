@@ -1,0 +1,66 @@
+body {
+    background-color: lightblue;
+}
+
+.title {
+    text-align: center;
+    font-size: 100px;
+
+    font-family: 'Square Peg', cursive;
+}
+
+.termsubtitle {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+
+    font-family: 'Square Peg', cursive;
+}
+
+.definitionsubtitle {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+
+    font-family: 'Square Peg', cursive;
+    display: none;
+}
+
+.term {
+    background-color: white;
+    border: solid 5px black;
+    border-radius: 15px;
+    text-align: center;
+    width: 45%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+}
+
+.definition{
+    background-color: white;
+    border: solid 5px black;
+    border-radius: 15px;
+    text-align: center;
+    width: 45%;
+    margin: auto;
+    margin-top: 20px;
+    display: none
+}
+
+.button {
+    text-align: center;
+    margin-top: 100px
+}
+
+button {
+    color: white;
+    background-color: rgb(83, 235, 83);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
