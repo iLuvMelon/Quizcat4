@@ -1,5 +1,9 @@
 body {
-    background-color: lightblue;
+    background: linear-gradient(to bottom, lightblue, rgba(136, 94, 160, 0.2));
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .title {
@@ -56,7 +60,7 @@ body {
 
 button {
     color: white;
-    background-color: rgb(83, 235, 83);
+    background-color: rgb(25, 39, 58);
     padding: 20px;
     border-radius: 15px;
 }
