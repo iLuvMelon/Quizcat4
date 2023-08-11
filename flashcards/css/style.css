@@ -10,7 +10,7 @@ body {
     text-align: center;
     font-size: 100px;
 
-    font-family: 'Square Peg', cursive;
+   font-family: 'Raleway', sans-serif;
 }
 
 .termsubtitle {
@@ -18,7 +18,7 @@ body {
     font-size: 40px;
     margin-top: 20px;
 
-    font-family: 'Square Peg', cursive;
+    font-family: 'Raleway', cursive;
 }
 
 .definitionsubtitle {
@@ -26,7 +26,7 @@ body {
     font-size: 40px;
     margin-top: 20px;
 
-    font-family: 'Square Peg', cursive;
+    font-family: 'Raleway', cursive;
     display: none;
 }
 
