@@ -6,6 +6,59 @@ body {
     background-attachment: fixed;
 }
 
+.menu{
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: auto;
+}
+
+ul{
+    list-style: none;
+    background: rgb(25, 39, 58);
+    position: relative;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+}
+
+ul li ul.dropdown li {
+    display: block;
+    background: rgb(25, 39, 58);
+    margin: 2px 0px;
+}
+
+ul li ul.dropdown {
+    width: auto;
+    background: rgb(25, 39, 58);
+    position: absolute;
+    z-index: 999;
+    display: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul li a:hover{
+    background: rgb(18, 27, 41);
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
 .title {
     text-align: center;
     font-size: 100px;
@@ -32,25 +85,27 @@ body {
 
 .term {
     background-color: white;
-    border: solid 5px black;
+    border: solid 2px black;
     border-radius: 15px;
     text-align: center;
     width: 45%;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 40px;
+    font-family: 'Raleway', cursive;
 
 }
 
 .definition{
     background-color: white;
-    border: solid 5px black;
+    border: solid 2px black;
     border-radius: 15px;
     text-align: center;
     width: 45%;
     margin: auto;
     margin-top: 20px;
-    display: none
+    display: none;
+    font-family: 'Raleway', cursive;
 }
 
 .button {
@@ -67,4 +122,10 @@ button {
 
 button:hover {
     transform: scale(1.1);
+}
+
+@media(max-width:480px){
+    .title{
+        font-size: 50px;
+    }
 }

@@ -13,6 +13,56 @@ body{
     background-attachment: fixed;
 }
 
+.menu{
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: auto;
+}
+
+ul{
+    list-style: none;
+    background: rgb(161, 150, 197);
+    position: relative;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+}
+
+ul li ul.dropdown li {
+    display: block;
+    background: rgb(161, 150, 197);
+    margin: 2px 0px;
+}
+
+ul li ul.dropdown {
+    width: auto;
+    background: rgb(161, 150, 197);
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul li a:hover{
+    background: rgb(134, 122, 165);
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
 header{background-color: white;}
 
 button{
@@ -79,13 +129,16 @@ button:hover{
     padding: 0 10px;
 }
 
+
+
 .flashcard{
     width: 370 px;
     height: 200 px;
     word-wrap: break-word;
     margin: 10px;
     background-color: white;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5)
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+    text-align: center;
 }
 
 .flashcard h2{
@@ -106,6 +159,10 @@ button:hover{
     .nav{
         flex-direction: column;
         align-items: center;
+    }
+
+    header{
+        text-align: center;
     }
 
     .create-box{
