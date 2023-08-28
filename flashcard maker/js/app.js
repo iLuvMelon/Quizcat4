@@ -32,4 +32,5 @@ checkButton.addEventListener("click", function() {
 
 nextButton.addEventListener("click", function() {
    getRandomWord();
+   definition.style.display = "none";
 });
