@@ -14,41 +14,40 @@ contentArray.forEach(divMaker);
 var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
-
   close[i].onclick = function() {
     var lala = this.parentElement;
     lala.style.display = "none";
-    /*
-    just tried coding a delete button this was hell omg this is what I've done so far
 
-    var del_question = getText(document.getElementById("q"))
-    var del_answer = getText(document.getElementById("a"))
-    var contentArray2 = localStorage.getItem('items')
-  
-    words = JSON.parse(contentArray2)
-    data = Object.entries(words)
+    var del_question = getText(document.getElementById("q"));
+    var del_answer = getText(document.getElementById("a"));
+    var contentArray2 = localStorage.getItem('items');
 
-    for (var i =0; i< data.length; i++) {
-      current = data[i]
+    words = JSON.parse(contentArray2);
+    data = Object.entries(words);
+
+    for (var i = data.length - 1; i >= 0; i--) {
+      current = data[i];
       if (current[1]["my_answer"] == del_answer && current[1]["my_question"] == del_question) {
-          words.splice(i, 1);
+        words.splice(i, 1);
       }
+    }
 
     var new_items = JSON.stringify(words);
-    var check = Object.entries(new_items);
 
-    if (check == 0);{
-      localStorage.clear()
+    // Check if there are no more items, then clear localStorage
+    if (words.length === 0) {
+      localStorage.clear();
     }
 
     localStorage.setItem("items", new_items);
     question.value = '';
     answer.value = '';
+  }
+}
+
+  
     
 
-    }*/
-    
-  }}
 
 function divMaker(text){
   var div = document.createElement("div");

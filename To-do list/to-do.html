@@ -165,8 +165,8 @@ for (i = 0; i < close.length; i++) {
   close[i].onclick = function() {
     var div = this.parentElement;
     div.style.display = "none";
-    //var del_text = div.getElementById(Text)
-    //localStorage.removeItem(del_text)
+    var del_text = div.getElementById(Text)
+    localStorage.removeItem(del_text)
   }
 }
 
@@ -185,8 +185,9 @@ function newElement() {
   var t = document.createTextNode(inputValue);
   li.appendChild(t);
 
-  //contentArray.push(inputValue);
-  //localStorage.setItem("list", JSON.stringify(contentArray));
+  contentArray.push(inputValue);
+  localStorage.setItem("list", JSON.stringify(contentArray));
+
 
 
   if (inputValue === '') {
