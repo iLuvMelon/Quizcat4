@@ -145,6 +145,27 @@ button:hover{
     font-size: 1rem;
 }
 
+.close {
+    right: 0;
+    top: 0;
+    left: 9000;
+    padding: 2px 16px 2px 16px;
+    margin-left: 90;
+    margin-top: 100px;
+    background-color: #f44336;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    list-style-type: none;
+    font-size: 18px;
+    transition: 0.2s;
+  }
+
+.close:hover {
+    background-color: #f44336;
+    color: white;
+  }
+
 @media(max-width: 768px){
     .flashcard{
         margin: auto

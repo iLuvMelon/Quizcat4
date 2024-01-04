@@ -16,7 +16,6 @@ function getRandomWord() {
     definition.innerHTML = `<h3>${randomTerm[1] ["my_answer"]}</h3>`
 }
 
-
 checkButton.addEventListener("click", function() {
     if (areyouthere < 2) {
         areyouthere = 3

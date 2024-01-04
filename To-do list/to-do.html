@@ -143,6 +143,10 @@ input {
 </ul>
 
 <script>
+
+// Local storage (just attempting for now)
+let contentArray = localStorage.getItem("list") ? JSON.parse(localStorage.getItem('list')) : [];
+
 // Create a "close" button and append it to each list item
 var myNodelist = document.getElementsByTagName("LI");
 var i;
@@ -161,6 +165,8 @@ for (i = 0; i < close.length; i++) {
   close[i].onclick = function() {
     var div = this.parentElement;
     div.style.display = "none";
+    //var del_text = div.getElementById(Text)
+    //localStorage.removeItem(del_text)
   }
 }
 
@@ -178,6 +184,11 @@ function newElement() {
   var inputValue = document.getElementById("myInput").value;
   var t = document.createTextNode(inputValue);
   li.appendChild(t);
+
+  //contentArray.push(inputValue);
+  //localStorage.setItem("list", JSON.stringify(contentArray));
+
+
   if (inputValue === '') {
     alert("You must write something!");
   } else {
