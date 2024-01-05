@@ -13,22 +13,23 @@ contentArray.forEach(divMaker);
 
 var close = document.getElementsByClassName("close");
 var i;
-for (i = 0; i < close.length; i++) {
-  close[i].onclick = function() {
-    var lala = this.parentElement;
+
+flashcards.addEventListener("click", function(event) {
+  if (event.target.classList.contains("close")) {
+    var lala = event.target.parentElement;
     lala.style.display = "none";
 
-    var del_question = getText(document.getElementById("q"));
-    var del_answer = getText(document.getElementById("a"));
-    var contentArray2 = localStorage.getItem('items');
+    var del_question = getText(lala.querySelector("#q"));
+    var del_answer = getText(lala.querySelector("#a"));
 
-    words = JSON.parse(contentArray2);
+    var contentArray2 = localStorage.getItem('items');
+    var words = JSON.parse(localStorage.getItem('items')) || [];
     data = Object.entries(words);
 
-    for (var i = data.length - 1; i >= 0; i--) {
+    for (var i = words.length - 1; i >= 0; i--) {
       current = data[i];
       if (current[1]["my_answer"] == del_answer && current[1]["my_question"] == del_question) {
-        words.splice(i, 1);
+        words.splice(i,1);
       }
     }
 
@@ -42,10 +43,10 @@ for (i = 0; i < close.length; i++) {
     localStorage.setItem("items", new_items);
     question.value = '';
     answer.value = '';
-  }
-}
 
-  
+  }
+});
+
     
 
 
