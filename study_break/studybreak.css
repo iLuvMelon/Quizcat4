@@ -1,0 +1,12 @@
+*, *::after, *::before{
+    margin: 100%;
+    padding: 0;
+    border: 0;
+    background-color: aquamarine;
+
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    
+}
