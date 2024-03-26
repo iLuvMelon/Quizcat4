@@ -21,8 +21,6 @@ flashcards.addEventListener("click", function(event) {
 
     var del_question = getText(lala.querySelector("#q"));
     var del_answer = getText(lala.querySelector("#a"));
-
-    var contentArray2 = localStorage.getItem('items');
     var words = JSON.parse(localStorage.getItem('items')) || [];
     data = Object.entries(words);
 
